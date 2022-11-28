@@ -90,14 +90,46 @@
 
 # Reverse Hill Pattern
 '''
-  * * * *  * * * * * 
-    * * *  * * * * 
-      * *  * * * 
-        *  * * 
-           * 
+  * * * * * * * * * 
+    * * * * * * * 
+      * * * * * 
+        * * * 
+          * 
 '''
-n = 5
+# n = 5
 
+# for i in range(n): #counting rows
+#     for j in range(i + 1): #counting columns
+#         print(' ', end=" ")
+#     for j in range(i, n - 1): #counting columns
+#         print('*', end=" ")
+#     for j in range(i, n): #counting columns
+#         print('*', end=" ")
+#     print()
+
+# Diamond Pattern
+
+'''
+          * 
+        * * * 
+      * * * * * 
+    * * * * * * * 
+  * * * * * * * * * 
+    * * * * * * * 
+      * * * * * 
+        * * * 
+          * 
+'''
+
+n = 5
+for i in range(n-1): #counting rows
+    for j in range(i, n): #counting columns
+        print(' ', end=" ")
+    for j in range(i+1): #counting columns
+        print('*', end=" ")
+    for j in range(i): #counting columns
+        print('*', end=" ")
+    print()
 for i in range(n): #counting rows
     for j in range(i + 1): #counting columns
         print(' ', end=" ")
