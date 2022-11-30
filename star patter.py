@@ -121,20 +121,84 @@
           * 
 '''
 
-n = 5
-for i in range(n-1): #counting rows
-    for j in range(i, n): #counting columns
-        print(' ', end=" ")
-    for j in range(i+1): #counting columns
-        print('*', end=" ")
-    for j in range(i): #counting columns
-        print('*', end=" ")
-    print()
-for i in range(n): #counting rows
-    for j in range(i + 1): #counting columns
-        print(' ', end=" ")
-    for j in range(i, n - 1): #counting columns
-        print('*', end=" ")
-    for j in range(i, n): #counting columns
-        print('*', end=" ")
-    print()
+# n = 5
+# for i in range(n-1): #counting rows
+#     for j in range(i, n): #counting columns
+#         print(' ', end=" ")
+#     for j in range(i+1): #counting columns
+#         print('*', end=" ")
+#     for j in range(i): #counting columns
+#         print('*', end=" ")
+#     print()
+# for i in range(n): #counting rows
+#     for j in range(i + 1): #counting columns
+#         print(' ', end=" ")
+#     for j in range(i, n - 1): #counting columns
+#         print('*', end=" ")
+#     for j in range(i, n): #counting columns
+#         print('*', end=" ")
+#     print()
+
+# Butterfly Pattern
+'''
+*                     * 
+* *                 * * 
+* * *             * * * 
+* * * *         * * * * 
+* * * * *     * * * * * 
+* * * *         * * * * 
+* * *             * * * 
+* *                 * * 
+*                     * 
+
+'''
+n = int(input('Enter the value n: \n'))
+for i in range(n - 1):
+  for j in range(i+1):
+    print('*', end=' ')
+  for j in range(i, n):
+    print(' ', end=' ')
+  for j in range(i, n):
+    print(' ', end=' ')
+  for j in range(i + 1):
+    print('*', end=' ')
+  print()
+for i in range(n):
+  for j in range(i, n):
+    print('*', end=' ')
+  for j in range(i + 1):
+    print(' ', end=' ')
+  for j in range(i + 1):
+    print(' ', end=' ')
+  for j in range(i, n):
+    print('*', end=' ')
+  print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Sandglass Pattern
+'''
+  * * * * * * * * * 
+    * * * * * * * 
+      * * * * * 
+        * * * 
+          * 
+          * 
+        * * * 
+      * * * * * 
+    * * * * * * * 
+  * * * * * * * * * 
+'''
