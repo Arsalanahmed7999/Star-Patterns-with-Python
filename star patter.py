@@ -378,30 +378,17 @@
 '''
 
 # n = 5
-n = int(input('Enter the value n: \n'))
+# n = int(input('Enter the value n: \n'))
 
-for i in range(n - 1):
-  for j in range(i+1):
-    print('*', end=' ')
-  print()
+# for i in range(n - 1):
+#   for j in range(i+1):
+#     print('*', end=' ')
+#   print()
 
-for i in range(n):
-  for j in range(i, n):
-    print('*', end=' ')
-  print()
-
-
-
-
-
-
-
-
-
-
-
-
-
+# for i in range(n):
+#   for j in range(i, n):
+#     print('*', end=' ')
+#   print()
 
 
 # Left sided pascals triangle
@@ -416,3 +403,18 @@ for i in range(n):
         * * 
           * 
 '''
+# n = 5
+n = int(input('Enter the value n: \n'))
+
+for i in range(n - 1):
+  for j in range(i, n):
+    print(' ', end=' ')
+  for j in range(i + 1):
+    print('*', end=' ')
+  print()
+for i in range(n):
+  for j in range(i + 1):
+    print(' ', end=' ')
+  for j in range(i, n):
+    print('*', end=' ')
+  print()
